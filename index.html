@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7eee8">
+  <meta name="description" content="A little digital diary for Vishu — memories, photographs, laughter, fights, and everything in between.">
+  <title>A Little Diary for Vishu ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="page-loader">
+    <div class="loader-heart">♡</div>
+    <p>opening something that took a lot of memories to make...</p>
+  </div>
+
+  <div class="grain"></div>
+  <div class="cursor-heart" id="cursorHeart">♡</div>
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <button class="music-btn" id="musicBtn" aria-label="Play music">
+    <span>♫</span>
+    <span id="musicText">Our song</span>
+  </button>
+  <audio id="bgMusic" loop>
+    <source src="music/our_song.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <!-- OPENING -->
+    <section class="opening screen" id="opening">
+      <div class="opening-orbit orbit-one"></div>
+      <div class="opening-orbit orbit-two"></div>
+      <div class="opening-stars">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <div class="opening-content">
+        <p class="eyebrow reveal">A little something for</p>
+        <h1 class="opening-title reveal delay-1">
+          <span>Vishu</span><br>
+          <em>♡</em>
+        </h1>
+        <p class="opening-subtitle reveal delay-2">
+          Not a perfect love story.<br>
+          Just a real one.
+        </p>
+
+        <div class="envelope reveal delay-3">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <span>10.09.2023</span>
+            <small>and somehow, still counting...</small>
+          </div>
+        </div>
+
+        <button class="primary-btn reveal delay-4" onclick="startDiary()">
+          <span>Open the diary</span>
+          <b>→</b>
+        </button>
+        <p class="tiny-note reveal delay-4">best experienced with headphones & a little patience</p>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="quiz-section hidden" id="quiz">
+      <div class="section-glow"></div>
+      <div class="quiz-wrap">
+        <div class="quiz-top">
+          <span class="eyebrow">Before the diary opens...</span>
+          <span class="progress-text" id="progressText">01 / 07</span>
+        </div>
+
+        <div class="quiz-progress">
+          <div id="quizProgress"></div>
+        </div>
+
+        <div class="quiz-card" id="quizCard">
+          <p class="quiz-kicker">Memory check ♡</p>
+          <h2 id="questionText"></h2>
+          <p class="quiz-hint" id="questionHint"></p>
+          <div class="options" id="options"></div>
+          <p class="quiz-feedback" id="quizFeedback"></p>
+        </div>
+
+        <p class="quiz-footer">Don't worry. There is no exam here. I've already forgiven you for the birthday incident.</p>
+      </div>
+    </section>
+
+    <!-- DIARY -->
+    <section class="diary hidden" id="diary">
+      <div class="diary-cover">
+        <div class="cover-paper">
+          <div class="pressed-flower flower-a">✿</div>
+          <div class="pressed-flower flower-b">❀</div>
+          <p class="cover-small">THE LITTLE</p>
+          <h2>Vishu's<br><span>Diary</span></h2>
+          <div class="cover-line"></div>
+          <p class="cover-date">10 September 2023 — ∞</p>
+          <p class="cover-note">some memories deserve more than a camera roll</p>
+          <button class="cover-btn" onclick="openChapters()">turn the page ↓</button>
+        </div>
+      </div>
+
+      <!-- CHAPTER 1 -->
+      <article class="chapter paper-pink" id="chapter1">
+        <div class="chapter-inner">
+          <div class="chapter-heading">
+            <span class="chapter-number">01</span>
+            <p class="eyebrow">the beginning</p>
+            <h2>That Pink Kurta</h2>
+            <p class="chapter-subtitle">10 September 2023 · Prem no divas</p>
+          </div>
+
+          <div class="story two-column">
+            <div>
+              <p>10 September 2023. <strong>Prem no divas.</strong> Funny how a date that looked completely ordinary at the time slowly became one of the most important dates in my little world.</p>
+              <p>I still remember seeing you in that <span class="highlight">pink kurta</span>. I didn't know you properly. I didn't know your favourite things, your habits, your moods, your little expressions, or the person you would eventually become to me.</p>
+              <p>But I noticed you.</p>
+              <p>It wasn't some dramatic movie scene where everything suddenly became slow and there was a background song playing. It was much simpler than that. You were just there, wearing pink, being you, and somehow my eyes decided that they wanted to remember that moment.</p>
+              <p>At that point, I had absolutely no idea how many conversations would come after that day. I didn't know about the jokes, the teasing, the fights, the random plans, the food dates, the long walks, the photos, or the thousands of tiny moments that would slowly become <em>ours</em>.</p>
+            </div>
+            <div class="story-side">
+              <p>Back then, even a small <strong>Hi</strong> or <strong>Hello</strong> from you felt bigger than it probably should have.</p>
+              <p>And maybe that's what makes the beginning so beautiful. Nothing had a name yet. There were no expectations. No promises. No idea where this was going.</p>
+              <p>Just a boy who noticed a girl in a pink kurta.</p>
+              <p>And a girl who, without knowing it, was about to become a very important chapter in his life.</p>
+              <p class="handwritten">Maybe some stories don't begin with a confession.<br>Maybe they begin with noticing someone.</p>
+            </div>
+          </div>
+
+          <div class="photo-feature">
+            <div class="polaroid tilt-left">
+              <div class="photo-frame"><img src="photos/first_pink_kurta.jpeg" alt="Vishu in the pink kurta" onerror="this.parentElement.classList.add('missing')"></div>
+              <p>the photo that started a chapter</p>
+            </div>
+            <div class="photo-caption">“I didn't know you yet. I just knew I wanted to remember you.”</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHAPTER 2 -->
+      <article class="chapter paper-cream" id="chapter2">
+        <div class="chapter-inner narrow">
+          <div class="chapter-heading">
+            <span class="chapter-number">02</span>
+            <p class="eyebrow">the tiny beginnings</p>
+            <h2>Hi. Hello. Again.</h2>
+            <p class="chapter-subtitle">When small conversations started feeling important</p>
+          </div>
+
+          <div class="story">
+            <p>There was a phase when our conversations were basically tiny little messages. <strong>Hi. Hello. Kya chal raha hai?</strong> Nothing that would look special if somebody else read the chat.</p>
+            <p>But I remember how even those little messages could change my mood. One notification from you could make an ordinary day feel slightly less ordinary.</p>
+            <p>We didn't have some grand plan of becoming this close. We were just slowly becoming comfortable with each other. One message became another. One joke became an inside joke. One conversation stretched a little longer than expected.</p>
+            <p>And somewhere between all those completely normal conversations, you stopped feeling like just another person from college.</p>
+            <p>You became someone I started looking forward to.</p>
+            <p class="handwritten center">“The funny thing about beginnings is that you rarely know you're living one.”</p>
+          </div>
+
+          <div class="photo-grid">
+            <div class="polaroid tilt-left"><div class="photo-frame"><img src="photos/early_days.jpeg" alt="Early days" onerror="this.parentElement.classList.add('missing')"></div><p>the early days</p></div>
+            <div class="polaroid tilt-right"><div class="photo-frame"><img src="photos/notes_start.jpeg" alt="Notes and studies" onerror="this.parentElement.classList.add('missing')"></div><p>where conversations grew</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHAPTER 3 -->
+      <article class="chapter paper-blue" id="chapter3">
+        <div class="chapter-inner narrow">
+          <div class="chapter-heading">
+            <span class="chapter-number">03</span>
+            <p class="eyebrow">the complicated part</p>
+            <h2>September to December</h2>
+            <p class="chapter-subtitle">Not every chapter was easy — and that's okay</p>
+          </div>
+
+          <div class="story">
+            <p>Then came the difficult part. September to December wasn't exactly the easiest chapter for us. There were moments where things felt confusing, heavy and honestly a little painful.</p>
+            <p>There were times when I didn't know what I was doing or how I was supposed to help. I thought maybe I could help you become a little better, help you through things, and then quietly step away.</p>
+            <p>Looking back, that thought itself feels strange because I eventually realised something important: <strong>people aren't projects to be fixed.</strong></p>
+            <p>We both had our own ways of dealing with things. We both made mistakes. We both misunderstood each other sometimes.</p>
+            <p>But even during the difficult phase, there was something that kept pulling the story forward. Maybe it was care. Maybe it was attachment. Maybe it was simply that neither of us was ready to let the whole thing become just a forgotten chapter.</p>
+            <p>And I'm glad we didn't pretend that everything was perfect. Because the imperfect parts taught us how to understand each other better.</p>
+          </div>
+
+          <div class="quote-card">
+            <span>“</span>
+            <p>Some chapters are not beautiful because they were easy. They are beautiful because you stayed long enough to learn from them.</p>
+            <small>— somewhere between then and now</small>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHAPTER 4 -->
+      <article class="chapter paper-yellow" id="chapter4">
+        <div class="chapter-inner">
+          <div class="chapter-heading">
+            <span class="chapter-number">04</span>
+            <p class="eyebrow">the turning point</p>
+            <h2>Notes → Conversations → Us</h2>
+            <p class="chapter-subtitle">Somehow, asking for notes became asking how your day was</p>
+          </div>
+
+          <div class="story two-column">
+            <div>
+              <p>And then there was the legendary notes phase.</p>
+              <p>It started innocently enough. Notes. Assignments. Questions. “Send this.” “Do you have that?” Completely academic. Totally innocent.</p>
+              <p>Except... somehow those conversations didn't stay academic.</p>
+              <p>We started talking more. Then every day. Then about things that had absolutely nothing to do with college.</p>
+              <p>We helped each other with assignments, encouraged each other when studies became annoying, and somehow managed to mix productivity with an unreasonable amount of nonsense.</p>
+            </div>
+            <div class="story-side">
+              <p>There was a kind of comfort developing between us.</p>
+              <p>You could tell me random things. I could annoy you with random things. We could discuss something serious and five minutes later be arguing about something completely stupid.</p>
+              <p>And that's when I think I stopped seeing you as someone I was simply talking to.</p>
+              <p>You had become part of my everyday life.</p>
+              <p class="handwritten">Notes were the excuse.<br>The conversations were the real story.</p>
+            </div>
+          </div>
+
+          <div class="memory-strip">
+            <div><span>01</span><b>notes</b></div>
+            <div><span>02</span><b>assignments</b></div>
+            <div><span>03</span><b>daily talks</b></div>
+            <div><span>04</span><b>“healthy flirting”</b></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHAPTER 5 -->
+      <article class="chapter paper-pink" id="chapter5">
+        <div class="chapter-inner narrow">
+          <div class="chapter-heading">
+            <span class="chapter-number">05</span>
+            <p class="eyebrow">the era</p>
+            <h2>Healthy Flirting™</h2>
+            <p class="chapter-subtitle">Because apparently we needed a professional term for it</p>
+          </div>
+
+          <div class="story">
+            <p>Somewhere along the way, our conversations became a little more... <em>interesting.</em></p>
+            <p>There was teasing. Compliments disguised as jokes. Jokes disguised as compliments. The occasional “okay fine” after pretending not to care.</p>
+            <p>And of course, the legendary phrase: <strong>healthy flirting.</strong></p>
+            <p>It was never just about flirting though. It was about being comfortable enough to tease each other without taking everything seriously. It was about knowing when to joke and when to actually listen.</p>
+            <p>I loved that side of us because it felt natural. We didn't have to perform. We could be stupid together. We could laugh at things that made absolutely no sense to anyone else.</p>
+            <p>And honestly, some of my favourite memories aren't the dramatic ones. They're the completely useless conversations that somehow lasted for hours.</p>
+          </div>
+
+          <div class="scribble">certified<br><strong>healthy flirting</strong><br>department ♡</div>
+        </div>
+      </article>
+
+      <!-- CHAPTER 6 -->
+      <article class="chapter paper-green" id="chapter6">
+        <div class="chapter-inner narrow">
+          <div class="chapter-heading">
+            <span class="chapter-number">06</span>
+            <p class="eyebrow">the promise</p>
+            <h2>Momos or Nothing</h2>
+            <p class="chapter-subtitle">“No KT? Momos.” — a very serious contract</p>
+          </div>
+
+          <div class="story">
+            <p>Then came one of those promises that sounds completely ridiculous but somehow becomes a permanent memory.</p>
+            <p><strong>If you got no KT, there would be momos.</strong></p>
+            <p>Was this academically motivating? Maybe.</p>
+            <p>Was it an internationally recognised reward system? Absolutely not.</p>
+            <p>Did I mean it anyway? Of course.</p>
+            <p>And somewhere in the middle of all the studying, teasing and random conversations, momos became one of those tiny things that represented us. Food, jokes, plans, “when are we going?”, and the inevitable <strong>“kyarek baapo Ambani nathi.”</strong></p>
+            <p>Maybe that's why I love these memories. They aren't extraordinary to the rest of the world. But they are ours.</p>
+          </div>
+
+          <div class="photo-feature compact">
+            <div class="polaroid tilt-right">
+              <div class="photo-frame"><img src="photos/momos_promise.jpeg" alt="Momos memory" onerror="this.parentElement.classList.add('missing')"></div>
+              <p>the most academically important momos</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHAPTER 7 -->
+      <article class="chapter paper-cream" id="chapter7">
+        <div class="chapter-inner">
+          <div class="chapter-heading">
+            <span class="chapter-number">07</span>
+            <p class="eyebrow">the incident</p>
+            <h2>The Birthday I Somehow Forgot</h2>
+            <p class="chapter-subtitle">Yes. I know. You don't have to remind me.</p>
+          </div>
+
+          <div class="story two-column">
+            <div>
+              <p>And then there was <strong>the birthday incident.</strong></p>
+              <p>Vacation brain. Too much happening. A fight with Yukta. Somehow, in the middle of all of that, I forgot to wish you properly.</p>
+              <p>Worse, I let my frustration spill onto you. And that's something I genuinely regret.</p>
+              <p>Because no matter how irritated or distracted I was, you didn't deserve to receive the worst version of my mood.</p>
+            </div>
+            <div class="story-side">
+              <p>We joke about it now. You still have the legal right to tease me about it for the rest of my natural life.</p>
+              <p>But underneath the jokes, it taught me something.</p>
+              <p>People we care about can get hurt not only by the things we intentionally do, but also by the emotions we fail to handle properly.</p>
+              <p>So yes, I remember the birthday incident.</p>
+              <p>And yes, I am still guilty.</p>
+              <p class="handwritten">Happy birthday... extremely belatedly, apparently. ♡</p>
+            </div>
+          </div>
+
+          <div class="photo-grid single-feature">
+            <div class="polaroid tilt-left">
+              <div class="photo-frame"><img src="photos/birthday.jpg" alt="Birthday memory" onerror="this.parentElement.classList.add('missing')"></div>
+              <p>the birthday memory</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHAPTER 8 -->
+      <article class="chapter paper-blue" id="chapter8">
+        <div class="chapter-inner">
+          <div class="chapter-heading">
+            <span class="chapter-number">08</span>
+            <p class="eyebrow">the memories</p>
+            <h2>Third Year: Our Little Chaos</h2>
+            <p class="chapter-subtitle">Beaches · Churchgate · Art Fest · Festivals · Movies · Food · Random Plans</p>
+          </div>
+
+          <div class="story">
+            <p>Then came the chapter that feels less like one story and more like an entire camera roll.</p>
+            <p>Third year gave us so many memories that it is almost impossible to put them into one paragraph. We had fun. We fought. We annoyed each other. We sorted things out. We went out. We made random plans that somehow became good memories.</p>
+            <p>There were <strong>beach dates</strong> where the conversation mattered more than the place. There were <strong>Churchgate walks</strong> where we could keep talking without noticing how much time had passed.</p>
+            <p>There were art fests, college festivals, events, movies, food dates, random outings and photographs that looked completely normal when they were taken but now feel like little pieces of a different version of us.</p>
+            <p>There were days when we had absolutely no plan. And somehow those were often the best ones.</p>
+            <p>That's what I want to remember most: not just the big events, but the feeling of having someone to share ordinary days with.</p>
+          </div>
+
+          <div class="photo-mosaic">
+            <div class="polaroid p1"><div class="photo-frame"><img src="photos/beach_1.jpeg" alt="Beach memory" onerror="this.parentElement.classList.add('missing')"></div><p>somewhere by the sea</p></div>
+            <div class="polaroid p2"><div class="photo-frame"><img src="photos/beach_2.jpeg" alt="Beach memory 2" onerror="this.parentElement.classList.add('missing')"></div><p>another beach day</p></div>
+            <div class="polaroid p3"><div class="photo-frame"><img src="photos/churchgate.jpeg" alt="Churchgate memory" onerror="this.parentElement.classList.add('missing')"></div><p>Churchgate walks</p></div>
+            <div class="polaroid p4"><div class="photo-frame"><img src="photos/art_fest.jpeg" alt="Art fest" onerror="this.parentElement.classList.add('missing')"></div><p>art fest chaos</p></div>
+            <div class="polaroid p5"><div class="photo-frame"><img src="photos/college_fest.jpeg" alt="College festival" onerror="this.parentElement.classList.add('missing')"></div><p>college festival</p></div>
+            <div class="polaroid p6"><div class="photo-frame"><img src="photos/movie.jpg" alt="Movie date" onerror="this.parentElement.classList.add('missing')"></div><p>movie date</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHAPTER 9 -->
+      <article class="chapter paper-lavender" id="chapter9">
+        <div class="chapter-inner narrow">
+          <div class="chapter-heading">
+            <span class="chapter-number">09</span>
+            <p class="eyebrow">the real part</p>
+            <h2>Even When We Fight</h2>
+            <p class="chapter-subtitle">Because caring about someone doesn't mean never disagreeing</p>
+          </div>
+
+          <div class="story">
+            <p>Of course, we fight. We disagree. Sometimes one of us gets angry. Sometimes we misunderstand what the other person meant. Sometimes a tiny thing becomes a huge thing because we're both already irritated.</p>
+            <p>And there is one thing about your anger that I genuinely don't like. But I also know my own flaws. <strong>Maru aana karta worst che.</strong> So I bear some things because I know I have my own work to do too.</p>
+            <p>But Vishu, I want us to remember something: if someone matters to you, there should be a little difference between how you treat them and how you treat the rest of the world.</p>
+            <p>Not because anyone should be given special permission to disrespect the other person. Quite the opposite.</p>
+            <p>I want our arguments to stay respectful. I want us to be able to say, “I'm angry,” without turning that anger into something that hurts the person standing in front of us.</p>
+            <p>And I want the same thing from myself.</p>
+            <p>We don't need to become perfect people. We just need to become a little better at loving each other while we're still learning how to be ourselves.</p>
+            <p class="handwritten center">“Arguments can happen. Disrespect doesn't have to.”</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- FINAL -->
+      <article class="final-letter" id="final">
+        <div class="letter-paper">
+          <p class="eyebrow">the last page, for now</p>
+          <h2>Hey Vishu,</h2>
+
+          <div class="letter-body">
+            <p>If I tried to describe everything you've become to me, I'd probably need another diary. Maybe several.</p>
+            <p>Because you are not just one memory. You're the pink kurta I still remember. You're the “Hi” that used to make my day. You're the notes that somehow became conversations. You're the healthy flirting, the momos promise, the birthday disaster, the beach, Churchgate, festivals, movies, food dates and random plans.</p>
+            <p>You're also the difficult days. The fights. The misunderstandings. The moments where we had to choose whether to stay angry or try to understand each other.</p>
+            <p>And maybe that's why this means something to me.</p>
+            <p>Because it isn't a perfect story.</p>
+            <p>It's <em>our</em> story.</p>
+            <p>I don't know exactly what every future page looks like. But I know that when I look back at this chapter of my life, I don't want to remember only the big moments. I want to remember the stupid jokes, the random messages, the food, the walks, the arguments we survived, and the ordinary days that became special simply because you were there.</p>
+            <p>So thank you, Vishu. For being part of a story that started with a pink kurta and somehow became this much bigger than I ever expected.</p>
+            <p>And if we have more pages to write, let's make them kinder, funnier, more respectful, more chaotic, and a little more ours.</p>
+            <p class="signature">— me, who apparently had a lot to say ♡</p>
+          </div>
+
+          <div class="final-photo">
+            <div class="polaroid">
+              <div class="photo-frame"><img src="photos/favourite_photo.jpeg" alt="Favourite memory" onerror="this.parentElement.classList.add('missing')"></div>
+              <p>one of my favourite people, one of my favourite chapters</p>
+            </div>
+          </div>
+
+          <div class="ending">
+            <span>10 September 2023</span>
+            <b>→</b>
+            <span>∞</span>
+          </div>
+
+          <button class="restart-btn" onclick="restartDiary()">read it again ↻</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
